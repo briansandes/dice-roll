@@ -1,14 +1,14 @@
 # dice-roll
 
 ```js
-/*
-* @param totalRolls int - amount of times you wish to roll a dice
-* @param dice int - amount of dice you wish to roll each time
-*
-* @return int - sum of the results of all rolls
-* /
-const sumDice = (totalRolls, dice = 1) => {
-    const rollDice = () => Math.ceil(Math.random() * 6);
+//
+// @param totalRolls int - amount of times you wish to roll a dice
+// @param dice int - amount of dice you wish to roll each time
+// @param diceFaces int - number of faces each die has
+//
+// @return int - sum of the results of all rolls
+const sumDice = (totalRolls, dice = 1, diceFaces = 6) => {
+    const rollDice = () => Math.ceil(Math.random() * diceFaces);
 
     var sum = 0;
     for(let rolls = 0; rolls < totalRolls; rolls++) {
