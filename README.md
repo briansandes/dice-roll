@@ -29,7 +29,7 @@ sumDice(1000000, 1);
 sumDice(1000, 2);
 
 
-// rolls 3 dice a hundred times
+// rolls 3 dice a ten thousand times
 // the result should always approach the number 105000
 sumDice(10000, 3);
 ```
